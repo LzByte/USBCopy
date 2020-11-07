@@ -23,7 +23,7 @@ def check(first):
     else:
         NoDisk = len(o) - 5
     
-    for i in range(NoDisk): #En la primera ejecución guarda la lista de discos en una lista
+    for i in range(NoDisk): #En la primera ejecución guarda la lista de unidades
         disk = o[i + 3]
         print(disk[0])
         if first:
@@ -46,7 +46,7 @@ while c:
     print(diskListS)
     print("--------------")
     
-    if NoDisk - FNoDisk == 1: #Checkea si hay diferencia entre el número de discos inicial y el actual
+    if NoDisk - FNoDisk == 1: #Checkea si hay diferencia entre el número de unidades inicial y el actual
         print("Diferencia:")
         dif = (list(set(diskListS) - set(diskListF)))
         c = False
